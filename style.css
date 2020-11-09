@@ -1,8 +1,8 @@
 /* *
 {
     outline: 2px solid red;
-} */
-
+}
+ */
 body
 {
     font-family: Helvetica, serif;
@@ -21,13 +21,15 @@ body
  }
 
 header 
-{
+{   
     justify-content: space-between;
     align-items: center;
     width: 100%;
     display: inline-flex;
+    background-color: black;
     position: fixed;
     height: 69px;
+    z-index: 10;
     border-bottom: 1px solid seashell;
 }
 
@@ -50,5 +52,25 @@ nav
             color: lightslategray;
         }
 
-/* HERO IMAGE */
+/* HERO IMAGE SECTION */
+.hero
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.hero-img
+{
+    width: 1200px;
+    height: 700px;
+}
+
+.hero-desc
+{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 0.2;
+}
