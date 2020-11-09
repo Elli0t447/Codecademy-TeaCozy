@@ -1,0 +1,54 @@
+/* *
+{
+    outline: 2px solid red;
+} */
+
+body
+{
+    font-family: Helvetica, serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+
+ /* MAIN HEADER RULES */
+.logo
+ {
+     display: flex;
+     align-content: center;
+     height: 50px;
+ }
+
+header 
+{
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: inline-flex;
+    position: fixed;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+}
+
+nav
+{
+    margin-right: 30px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+        /* NAVEGATION ITEMS */
+        .header-item
+        {
+            color: seashell;
+            text-decoration: underline;
+        }
+
+        .header-item:hover
+        {
+            color: lightslategray;
+        }
+
+/* HERO IMAGE */
+
