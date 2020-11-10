@@ -1,8 +1,4 @@
-/* *
-{
-    outline: 2px solid red;
-} */
-
+/* GENERAL RULES */
 body
 {
     font-family: Helvetica, serif;
@@ -12,9 +8,10 @@ body
     opacity: 0.9;
 }
 
- /* MAIN HEADER RULES */
+ /* HEADER */
 .logo
  {
+     padding-left: 10px;
      height: 50px;
  }
 
@@ -22,19 +19,20 @@ header
 {   
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     top: 0;
+    left: 0;
     display: inline-flex;
     background-color: black;
     position: fixed;
     height: 69px;
+    width: 100%;
     z-index: 10;
     border-bottom: 1px solid seashell;
 }
 
 nav
 {
-    margin-right: 30px;
+    margin-right: 20px;
     gap: 20px;
     display: flex;
     justify-content: space-between;
@@ -48,7 +46,7 @@ nav
 
         .header-item:hover
         {
-            color: lightslategray;
+            color: #DADDE2;
         }
 
 /* HERO IMAGE SECTION */
@@ -71,7 +69,7 @@ nav
     position: absolute;
     width: 100%;
     text-align: center;
-    line-height: 0.2;
+    line-height: 1em;
 }
 
 /* TEA OF THE MONTH SECTION */
@@ -89,7 +87,6 @@ nav
     position: relative;
     top: 0;
     text-align: center;
-    width: 1000px;
     line-height: 0.2;
 }
 .tea-container
@@ -117,7 +114,7 @@ nav
 .locations
 {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
@@ -131,28 +128,91 @@ nav
 
 .location-container
 {
+    background-image: url("img/location.webp");
     height: 500px;
     width: 1200px;
-    background-image: url("img/location.webp");
     display: flex;
-    align-content: space-between;
     justify-content: space-evenly;
+    align-content: space-around;
+    flex-flow: row wrap;
+    text-align: center;
 }
 .location-box
 {
     background-color: black;
-    display: inline-flex;
-    align-content: space-between;
-    justify-content: space-evenly;
-    width: 300px;
-    height: 250px;
-    opacity: 1;
     position: relative;
-    top: 155px;
+    top: 55px;
+    width: 300px;
+    opacity: 1;
 }
 .location-box h4
 {
-    position: relative;
     text-align: center;
-    line-height: 2.2;
+    line-height: 2.2em;
+}
+
+        .location-box:hover
+        {
+            color: black;
+            background-color: #DADDE2;
+        }
+        
+/* CONTACT SECTION */
+.contact
+{
+    text-align: center;
+    height: 200px;
+}
+
+/* FOOTER */
+footer
+{
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width:910px)
+{
+    .location-container
+    {
+        object-fit: cover;
+        height: 920px;
+        padding-top: 30px;
+    }
+    .location-box
+    {
+        margin: 10px;
+    }
+    .locations-info
+    {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width:730px)
+{
+    .location-container
+    {
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .locations-info
+    {
+        color: black;
+        margin-bottom: 70px;
+    }
+    #last
+    {
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 545px)
+{
+    nav
+    {
+        font-size: 17px;
+    }
 }
