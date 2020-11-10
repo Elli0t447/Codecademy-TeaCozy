@@ -111,3 +111,48 @@ nav
     height: 200px;
     width: 300px;
 }
+
+
+/* LOCATIONS SECTION */
+.locations
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.locations-info
+{
+    position: relative;
+    top: 150px;
+    text-align: center;
+    z-index: 9;
+}
+
+.location-container
+{
+    height: 500px;
+    width: 1200px;
+    background-image: url("img/location.webp");
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+.location-box
+{
+    background-color: black;
+    display: inline-flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 250px;
+    opacity: 1;
+    position: relative;
+    top: 155px;
+}
+.location-box h4
+{
+    position: relative;
+    text-align: center;
+    line-height: 2.2;
+}
